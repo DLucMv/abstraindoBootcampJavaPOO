@@ -2,14 +2,15 @@ package com.dlmv.desafio.dominio;
 
 public class Curso extends Conteudo{
 
-    private int cargaHoraria;
-
+    private final int cargaHoraria;
 
     public int getCargaHoraria() {
         return cargaHoraria;
     }
 
-    public void setCargaHoraria(int cargaHoraria) {
+    public Curso(String titulo, String descricao, int cargaHoraria) {
+        this.setTitulo(titulo);
+        this.setDescricao(descricao);
         this.cargaHoraria = cargaHoraria;
     }
 

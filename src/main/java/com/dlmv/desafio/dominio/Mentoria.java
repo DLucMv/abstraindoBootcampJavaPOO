@@ -1,11 +1,17 @@
 package com.dlmv.desafio.dominio;
 
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 
 public class Mentoria extends Conteudo {
 
     private LocalDate data;
 
+    public Mentoria(String titulo, String descricao, LocalDate data) {
+        this.setTitulo(titulo);
+        this.setDescricao(descricao);
+        this.data = data;
+    }
 
     public LocalDate getData() {
         return data;
